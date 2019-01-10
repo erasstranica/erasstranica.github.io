@@ -27,3 +27,4 @@ else if(hea >= edu && hea >= con){
 else{
     window.open('./construction.html', '_self');  
 }
+}
