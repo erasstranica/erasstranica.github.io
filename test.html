@@ -32,7 +32,7 @@
   </head>
 
   <body>
-
+	<!-- UBACI SLIKE ERASMUS LOGO, ŠKOlA, MASC-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -60,41 +60,83 @@
         <p class="lead">Please answer all the questions truthfully and think them through as this will give you the most accurate suggestion.</p>
       </div>
     <form name="test1" action="javascript:void(0);" onsubmit="return myfunc();">
-        <h3 class="text-left">Question 1</h3>
-        <h4 class="text-left">Do you think you are more suited to:</h4>
-        <div class="radio">
-            <label><input type="radio" name="q1" value="education" required>Education</label><br>
-            <label><input type="radio" name="q1" value="health" required>Health</label><br>
-            <label><input type="radio" name="q1" value="construction" required>Construction</label>
-        </div><br>
-        
+	
+		<h3 class="text-left">Question 1</h3>
+        <h4 class="text-left">What kind of person are you? Check all that apply.</h4>
+		<div class="checkbox">
+			<label><input type="checkbox" name="q1" value="health">I can handle seeing blood.</label><br>
+			<label><input type="checkbox" name="q1" value="education">I like working with children.</label><br>
+			<label><input type="checkbox" name="q1" value="construction">I enjoy being physical.</label><br>
+			<label><input type="checkbox" name="q1" value="health">I want to save lives.</label><br>
+			<label><input type="checkbox" name="q1" value="education">I think learning is important.</label><br>
+			<label><input type="checkbox" name="q1" value="construction">I want to make people's live easier.</label><br>
+			<label><input type="checkbox" name="q1" value="health"></label><br>
+			<label><input type="checkbox" name="q1" value="education"></label><br>
+			<label><input type="checkbox" name="q1" value="construction"></label><br>
+		</div>
+		
+		<h3 class="text-left">Question 2</h3>
+        <h4 class="text-left">What kind of person are you? Check all that apply.</h4>
+		<div class="checkbox">
+			<label><input type="checkbox" name="q2" value="health"></label><br>
+			<label><input type="checkbox" name="q2" value="education">I am patient.</label><br>
+			<label><input type="checkbox" name="q2" value="construction"></label><br>
+			<label><input type="checkbox" name="q2" value="health"></label><br>
+			<label><input type="checkbox" name="q2" value="education"></label><br>
+			<label><input type="checkbox" name="q2" value="construction"></label><br>
+		</div>
+		
         <h3 class="text-left">Question 2</h3>
-        <h4 class="text-left">Do you think you are more suited to:</h4>
+        <h4 class="text-left">How do you cope with making tough decisions?</h4>
         <div class="radio">
-            <label><input type="radio" name="q2" value="education" required>Education</label><br>
-            <label><input type="radio" name="q2" value="health" required>Health</label><br>
-            <label><input type="radio" name="q2" value="construction" required>Construction</label>
+            <label><input type="radio" name="q2" value="health" required>Very well</label><br>
+            <label><input type="radio" name="q2" value="education">Okay</label><br>
+            <label><input type="radio" name="q2" value="construction">Not at all</label>
         </div><br>
         
         <h3 class="text-left">Question 3</h3>
-        <h4 class="text-left">Do you think you are more suited to:</h4>
+        <h4 class="text-left">How articulated are you?</h4>
         <div class="radio">
-            <label><input type="radio" name="q3" value="education" required>Education</label><br>
-            <label><input type="radio" name="q3" value="health" required>Health</label><br>
-            <label><input type="radio" name="q3" value="construction" required>Construction</label>
+            <label><input type="radio" name="q3" value="education" required>I can speak very well.</label><br>
+            <label><input type="radio" name="q3" value="health">I'm not very verbose.</label><br>
+            <label><input type="radio" name="q3" value="construction">I don't like speaking in public.</label>
         </div><br>
         
         <h3 class="text-left">Question 4</h3>
-        <h4 class="text-left">Do you think you are more suited to:</h4>
+        <h4 class="text-left">Are you good at giving advice to people?</h4>
         <div class="radio">
-            <label><input type="radio" name="q4" value="education" required>Education</label><br>
-            <label><input type="radio" name="q4" value="health" required>Health</label><br>
-            <label><input type="radio" name="q4" value="construction" required>Construction</label>
+            <label><input type="radio" name="q4" value="education" required>Yes.</label><br>
+            <label><input type="radio" name="q4" value="health">I get by okay.</label><br>
+            <label><input type="radio" name="q4" value="construction">No.</label>
         </div><br>
+		
+        <h3 class="text-left">Question 5</h3>
+        <h4 class="text-left">Would you take responsibility for the lives of others?</h4>
+        <div class="radio">
+            <label><input type="radio" name="q5" value="health" required>Yes, I would.</label><br>
+            <label><input type="radio" name="q5" value="construction">I'm not sure.</label><br>
+            <label><input type="radio" name="q5" value="education">No, that's too much responsibility.</label>
+        </div><br>
+		
+		<h3 class="text-left">Question 6</h3>
+        <h4 class="text-left">Would you accept a risky business with dangerous machines?</h4>
+		<div class="radio">
+			<label><input type="radio" name="q6" value="construction" required>Yes, I would.</label><br>
+			<label><input type="radio" name="q6" value="health">That's not quite my cup of tea.</label><br>
+			<label><input type="radio" name="q6" value="education">Never.</label><br>
+		</div>
+		
+		<h3 class="text-left">Question 7</h3>
+        <h4 class="text-left">Are you creative and do you like imagining new things?</h4>
+		<div class="radio">
+			<label><input type="radio" name="q6" value="health" required>Yes, I have a vivid imagination.</label><br>
+			<label><input type="radio" name="q6" value="education">Not really.</label><br>
+			<label><input type="radio" name="q6" value="construction">Not at all.</label><br>
+		</div>
+		
+		<br>
         <button type="submit" class="btn btn-default">Submit</button>
         <br>
-        <br>
-        <p>  </p>
     </form>
     </div><!-- /.container -->
 
