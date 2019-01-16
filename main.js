@@ -5,7 +5,7 @@ function myfunc(){
 $('input').each(function() {
     
   if($(this).is(':checked')) {
-      alert($(this));
+      //alert($(this));
     if($(this).val() === 'education'){
         edu = edu + 1;
     }
