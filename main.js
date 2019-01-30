@@ -19,9 +19,9 @@ $("input").each(function() {
 });
 hea = hea + parseFloat($('#q9').val());
 
-alert(hea);
-alert(con);
-alert(edu);
+//alert(hea);
+//alert(con);
+//alert(edu);
 if(edu >= hea && edu >= con){
     window.open('./education.html', '_self');
 }

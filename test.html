@@ -87,6 +87,9 @@ button:active {
   transform-origin: 75px 75px;
   transform: rotate(-90deg);
 }
+    body {
+            padding-top: 3.5rem;
+    }
 </style>
   </head>
  <!-- DO you consider yourself emotionally competent and of large professional authority?-->
@@ -148,7 +151,7 @@ button:active {
         <div class="radio">
             <label><input class ="krug" type="radio" name="q3" value="health" required>Very well</label><br>
             <label><input class ="krug" type="radio" name="q3" value="education">Okay</label><br>
-            <label><input class ="krug" type="radio" name="q3" value="construction">Not at all</label>
+            <label><input class ="krug" type="radio" name="q3" value="construction">Not at all</label><br>
         </div><br>
         
         <h3 class="text-left">Question 4</h3>
@@ -156,7 +159,7 @@ button:active {
         <div class="radio">
             <label><input class ="krug" type="radio" name="q4" value="education" required>I can speak very well.</label><br>
             <label><input class ="krug" type="radio" name="q4" value="health">I'm not very verbose.</label><br>
-            <label><input class ="krug" type="radio" name="q4" value="construction">I don't like speaking in public.</label>
+            <label><input class ="krug" type="radio" name="q4" value="construction">I don't like speaking in public.</label><br>
         </div><br>
         
         <h3 class="text-left">Question 5</h3>
@@ -164,7 +167,7 @@ button:active {
         <div class="radio">
             <label><input class ="krug" type="radio" name="q5" value="education" required>Yes.</label><br>
             <label><input class ="krug" type="radio" name="q5" value="health">I get by okay.</label><br>
-            <label><input class ="krug" type="radio" name="q5" value="construction">No.</label>
+            <label><input class ="krug" type="radio" name="q5" value="construction">No.</label><br>
         </div><br>
 		
         <h3 class="text-left">Question 6</h3>
@@ -172,7 +175,7 @@ button:active {
         <div class="radio">
             <label><input class ="krug" type="radio" name="q6" value="health" required>Yes, I would.</label><br>
             <label><input class ="krug" type="radio" name="q6" value="construction">I'm not sure.</label><br>
-            <label><input class ="krug" type="radio" name="q6" value="education">No, that's too much responsibility.</label>
+            <label><input class ="krug" type="radio" name="q6" value="education">No, that's too much responsibility.</label><br>
         </div><br>
 		
 		<h3 class="text-left">Question 7</h3>
@@ -189,18 +192,20 @@ button:active {
 			<label><input class ="krug" type="radio" name="q8" value="health" required>Yes, I have a vivid imagination.</label><br>
 			<label><input class ="krug" type="radio" name="q8" value="education">Not really.</label><br>
 			<label><input class ="krug" type="radio" name="q8" value="construction">Not at all.</label><br>
-		</div>
+		</div><br>
 		
 		
 		<h3 class="text-left">Question 9</h3>
         <h4 class="text-left">Are you creative and do you like imagining new things?</h4>
-		<div class="slider-wrapper">
-			<p>Gore </p>
-			<label><input type="range" min="-1" max="1" step="0.25" value="0" name="q9" id="q9" required></label> <br><br><br><br><br><br><br><br>
-			<p>Dolje </p>
+		<div class="radio">
+			<p>Gore</p>
+            <div class="slider-wrapper">
+			<label><input type="range" min="-1" max="1" step="0.25" value="0" name="q9" id="q9" required></label>
+            </div><br>
+			<p>Dolje</p>
 		</div><br>
 		
-		<h3 class="text-left">Question 11</h3>
+		<h3 class="text-left">Question 10</h3>
         <h4 class="text-left">Which subjects do you most like in school? Check all that apply.</h4>
 		<div class="checkbox">
 			<label><input class ="krug" type="checkbox" name="q10" value="health">Biology.</label><br>
@@ -210,20 +215,22 @@ button:active {
 			<label><input class ="krug" type="checkbox" name="q10" value="education">Psychology.</label><br>
 			<label><input class ="krug" type="checkbox" name="q10" value="construction">Mathematics.</label><br>
 		</div><br>
-		
-		<br>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <br>
         <br>
     </form>
     </div><!-- /.container -->
 	<br>
-	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-	<footer class="mastfoot mt-auto">
-    <div class="inner">
-      <img src="./logo.png" style="height: 50px;">
-    </div>
-	</footer>
-	</div>
+      
+	<footer class="container">
+        <table class="table">
+            <tr>
+            <td><img src="./logo.png" style="height: 60px;"></td>
+            <td><img src="./ErasmusPlus.png" style="height: 60px; "></td>
+            <td><img src="./logoskole.jpg" style="height: 60px; "></td>
+            </tr>
+        </table>
+    </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
