@@ -2,24 +2,8 @@ var edu = 0;
 var hea = 0;
 var con = 0;
 function myfunc(){
-$('input').each(function() {
-    
-  if($(this).is(':checked')) {
-      //alert($(this));
-    if($(this).val() === 'education'){
-        edu = edu + 1;
-    }
-    else if ($(this).val() === 'health'){
-        hea = hea + 1;
-    }
-    else{
-        con = con + 1;
-    }
-  }   
-});
-
-/*$('input:checkbox').each(function() {
-    alert($(this));
+$("input").each(function() {
+    //alert($(this).name());
   if($(this).is(':checked')) {
       //alert($(this).val());
     if($(this).val() === 'education'){
@@ -33,7 +17,11 @@ $('input').each(function() {
     }
   }   
 });
-*/
+hea = hea + parseFloat($('#q9').val());
+
+alert(hea);
+alert(con);
+alert(edu);
 if(edu >= hea && edu >= con){
     window.open('./education.html', '_self');
 }

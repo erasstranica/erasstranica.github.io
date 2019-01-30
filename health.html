@@ -52,7 +52,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
+<!-- doctor, pediatrician, surgeon, midwife -->
     <div class="container">
 
       <div class="starter-template">
@@ -60,6 +60,25 @@
         <p class="lead">Congrats, according to the questions you answered we concluded you're well suited to the health career path<br> Answer the next questions and we'll try and see which career in health would suit you best.</p>
       </div>
     <form name="test1" action="javascript:void(0);" onsubmit="return myfunc();">
+		<h3 class="text-left">Question 1</h3>
+        <h4 class="text-left">Which of these are you interested in?</h4>
+		<div class="radio">
+			<label><input type="radio" name="q1" value="pediatrician" required>Childcare.</label><br>
+			<label><input type="radio" name="q1" value="surgeon">Aesthetic access to medicine.</label><br>
+			<label><input type="radio" name="q1" value="midwife">I want to be there when the child first sees the world.</label><br>
+			<label><input type="radio" name="q1" value="doctor">All of the above.</label><br>
+		</div><br>
+		
+        <h3 class="text-left">Question 2</h3>
+        <h4 class="text-left">How do you cope with making tough decisions?</h4>
+        <div class="radio">
+            <label><input type="radio" name="q2" value="doctor" required>Very well</label><br>
+            <label><input type="radio" name="q2" value="pediatrician">Okay</label><br>
+            <label><input type="radio" name="q2" value="surgeon">Not at all</label><br>
+			<label><input type="radio" name="q2" value="midwife">Not at all</label><br>
+        </div><br>
+        
+        
 		<br>
         <button type="submit" class="btn btn-default">Submit</button>
         <br>
@@ -76,6 +95,6 @@
     <script src="./files/bootstrap.min.js.download"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./files/ie10-viewport-bug-workaround.js.download"></script>
-    <script src="./main.js"></script>
+    <script src="./health.js"></script>
 
 </body></html>
