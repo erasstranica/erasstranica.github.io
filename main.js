@@ -3,9 +3,7 @@ var hea = 0;
 var con = 0;
 function myfunc(){
 $("input").each(function() {
-    //alert($(this).name());
   if($(this).is(':checked')) {
-      //alert($(this).val());
     if($(this).val() === 'education'){
         edu = edu + 1;
     }
@@ -19,16 +17,17 @@ $("input").each(function() {
 });
 hea = hea + parseFloat($('#q9').val());
 
-//alert(hea);
-//alert(con);
-//alert(edu);
+
 if(edu >= hea && edu >= con){
+    alert("We have concluded that you are best suited to the education path, you will be sent to the education job database where you can learn more.");
     window.open('./education.html', '_self');
 }
 else if(hea >= edu && hea >= con){
+    alert("We have concluded that you are best suited to the health path, you will be sent to the health job database where you can learn more.");
     window.open('./health.html', '_self');
 }
 else{
+    alert("We have concluded that you are best suited to the construction path, you will be sent to the construction job database where you can learn more.");
     window.open('./construction.html', '_self');  
 }
 }
